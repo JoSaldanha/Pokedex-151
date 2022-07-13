@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex 151</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script defer src="/js/dex.js"></script>
+    <script src="https://kit.fontawesome.com/f8983bb6bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="top-logo">
+            <img src="/img/pixel-pokedex.png" class="logo-pokedex">
+            <h1>Pokedex 151</h1>
+        </div>
+        <form action="/pages/pokemon.html" method="get">
+            <div class="mid">
+                <input type="text" class="input-search" name="nome">
+                <button type="submit" class="btn-search"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></button>
+            </div>
+        </form>
+        <div id="dex" class="pokemon-list"></div>
+    </main>
+</body>
+</html>

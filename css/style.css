@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(252, 245, 225);
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-pokedex{
+    width: 100px;
+    padding-right: 10px;
+}
+
+.top-logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-search{
+    font-size: 20px;
+    aspect-ratio: 1;
+    border-radius: 0 90px 90px 0;
+    padding: 10px;
+    background-color: rgba(199, 23, 23, 0.822);
+}
+
+.input-search{
+    border-radius: 90px 0 0 90px;
+    padding: 10px;
+}
+
+.pokemon-list{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 50px auto;
+}
+
+.card-div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.pokemon{
+    width: 100%;
+    height: 90%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    position: relative;
+    border: 1px solid red;
+    border-radius: 90px;
+}
+
+.card-box{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.poke-name{
+    font-size: 0.75em;
+    color: rgb(201, 44, 5);
+}
+
+@media only screen and (max-width: 1366px){
+    .pokemon-list{
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .pokemon-list{
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .pokemon-list{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .pokemon-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
